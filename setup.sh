@@ -27,3 +27,7 @@ add nextlevelbuilder/ui-ux-pro-max-skill --skill ui-ux-pro-max
 add img2threejs/img2threejs
 add remotion-dev/skills
 add https://github.com/cloudflare/security-audit-skill --skill security-audit
+
+# Agent-Reach (YouTube-Transkripte, GitHub, Reddit, X …); nie von PyPI, dort liegt ein fremdes Paket
+command -v uv >/dev/null || pip install --user uv
+uv tool install https://github.com/Panniantong/Agent-Reach/releases/latest/download/agent-reach.zip && agent-reach setup || echo "WARN: agent-reach"
