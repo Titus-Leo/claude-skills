@@ -58,3 +58,10 @@ Regeln: YouTube „inauthentic content“ seit 15.07.2025, Juli 2026 Klarstellun
 2. Renderer: HyperFrames (lizenzfrei) oder Remotion (schon installiert); stickman-kino als Start testen, Stimme auf ElevenLabs/Cartesia umstellen, weil Kokoro kein Deutsch kann.
 3. Stimme: ElevenLabs v4 für Mehrcharakter-Dialoge, Cartesia für Wort-Untertitel. Deutsche Qualität mit eigenem Text gegenhören.
 4. Test: 3 Formate × 20 Videos, Swipe-away je Format in YouTube Studio vergleichen.
+
+## Entscheidung Stimme (31.10.2026)
+
+VoiceStudio lokal (RTX 4080 Super), Engine **IndexTTS 2.5** (Emotion je Satz über `emo_text` + `emo_alpha`), 0 €. Reels auf Englisch. ElevenLabs nicht nötig.
+Charakter-Profile (VoiceStudio `/profiles`, feste Seeds): Mia `8e10dd2c` (w, jung, US), Elena `cd693f7f` (w, reif, tief, brit.), Zoe `32160f7d` (w, Teen, hoch), Marcus `60ab2ad8` (m, reif, tief, US), Leo `0cd91245` (m, jung, brit.).
+Render: `POST http://localhost:3900/generate` (multipart: text, profile_id, engine=indextts2, language=English, emo_text, emo_alpha) → WAV-Bytes. MCP `voicestudio` für generate_speech/transcribe.
+Bekannter Fehler: IndexTTS-Install lässt `hf_cache/w2v-bert-2.0/model.safetensors` manchmal unvollständig (`.incomplete`); dann von huggingface.co/facebook/w2v-bert-2.0 nachladen.
