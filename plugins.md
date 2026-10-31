@@ -8,6 +8,7 @@ Plugins:
 - `planung-teuer@steve-mods`
 - `kosten-qualitaet@steve-mods`
 - `github-minuten@steve-mods`
+- `uebergabe-mod@steve-mods` (Leiste ab drei geänderten Dateien: „Übergabe“ startet /uebergabe)
 - `ponytail@ponytail`
 
 Konto-Plugins (claude.ai-Katalog, gelten lokal und in der Cloud, nichts zu kopieren):
