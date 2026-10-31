@@ -30,4 +30,3 @@ add microsoft/playwright-cli --skill playwright-cli
 add nextlevelbuilder/ui-ux-pro-max-skill --skill ui-ux-pro-max
 add img2threejs/img2threejs
 add remotion-dev/skills
-add motiondivision/motion
