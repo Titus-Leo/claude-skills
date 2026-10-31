@@ -1,0 +1,5 @@
+{
+  "name": "github-minuten",
+  "version": "0.1.0",
+  "description": "GitHub-Minuten sparen: Pushes und Merges bündeln, CI nur, wenn sie etwas prüft."
+}

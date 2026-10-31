@@ -3,6 +3,7 @@
 Zentrale Ablage für alles, was Claude bei Titus nutzt, damit es in jeder Cloud-Sitzung verfügbar ist.
 
 - `skills/` – globale Skills (Kopie von `~/.claude/skills`), inkl. eigene `/uebergabe` und `/pruefung`
+- `mods/` + `.claude-plugin/marketplace.json` – eigene Claude-Code-Mods, Marktplatz `titus-mods`
 - `CLAUDE.md` – globale Anweisungen (Kopie von `~/.claude/CLAUDE.md`)
 - `plugins.md` – Plugins und Marketplaces
 - `setup.sh` – installiert Skills, Plugins, CLAUDE.md; als Setup-Skript der Cloud-Umgebung eintragen
@@ -12,7 +13,7 @@ Zentrale Ablage für alles, was Claude bei Titus nutzt, damit es in jeder Cloud-
 | Art | Lokal | Cloud | Weg |
 |---|---|---|---|
 | Skills in `skills/` | ja | ja | `setup.sh` |
-| Plugins aus `plugins.md` (ponytail, steve-mods) | ja | ja | `setup.sh` |
+| Mods aus `mods/` und ponytail | ja | ja | `setup.sh` |
 | Konto-Plugins (github, searchfit-seo, marketing, design, figma, anthropic-skills) | ja | ja | hängen am claude.ai-Konto, nichts zu kopieren |
 | Claude in Chrome, eingebauter Browser | ja | nein | brauchen den Desktop |
 | Docs-Anbindung | ja | ja | Konto |

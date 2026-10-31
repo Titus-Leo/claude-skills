@@ -1,18 +1,20 @@
-# Plugins (Benutzerebene)
+# Plugins (Benutzerebene, gelten in allen Repos)
 
 Marketplaces:
-- `steve-mods` – `titus-leo/automatisierung`
+- `titus-mods` – dieses Repo (`.claude-plugin/marketplace.json`, Mods unter `mods/`)
 - `ponytail` – `DietrichGebert/ponytail`
 
-Plugins:
-- `planung-teuer@steve-mods`
-- `kosten-qualitaet@steve-mods`
-- `github-minuten@steve-mods`
-- `uebergabe-mod@steve-mods` (Leiste ab drei geänderten Dateien: „Übergabe“ startet /uebergabe)
-- `ponytail@ponytail`
+Eigene Mods (`mods/`):
+- `planung-teuer@titus-mods` – starkes Modell plant, günstiges setzt um
+- `kosten-qualitaet@titus-mods` – günstig bauen, stark prüfen
+- `github-minuten@titus-mods` – Pushes/Merges bündeln, CI sparen
+- `uebergabe-mod@titus-mods` – Leiste ab drei geänderten Dateien: „Übergabe“ startet /uebergabe
+
+Fremd:
+- `ponytail@ponytail` – knapper Code, Band mit Kosten/Tokens
 
 Konto-Plugins (claude.ai-Katalog, gelten lokal und in der Cloud, nichts zu kopieren):
 - `github` (offizieller GitHub-MCP), `searchfit-seo`, `marketing`, `design`, `figma`, `anthropic-skills`
 
-Hinweis: In den drei `steve-mods`-Plugins muss `hooks/hooks.json` den Schlüssel `"hooks": {}` enthalten,
-sonst laden sie nicht. Im Quell-Repo `titus-leo/automatisierung` noch einzutragen.
+Hinweis: Die Mods lagen zuerst im Repo `titus-leo/automatisierung` (`tools/claude-mods/`, Marktplatz `steve-mods`).
+Seit 31.10.2026 ist dieses Repo die Quelle; die Kopie dort ist nur noch Referenz.

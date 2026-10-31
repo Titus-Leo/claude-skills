@@ -1,0 +1,11 @@
+{
+  "name": "titus-mods",
+  "description": "Arbeitsregeln von Titus als Claude-Code-Mods: Planung stark, Umsetzung günstig, Prüfung stark, GitHub-Minuten sparen, Übergabe erinnern. Gilt für alle Repos.",
+  "owner": { "name": "Titus (Leo)", "url": "https://github.com/Titus-Leo" },
+  "plugins": [
+    { "name": "planung-teuer", "source": "./mods/planung-teuer", "description": "Planung durch ein starkes Modell mit passendem Denkaufwand, Umsetzung durch günstige Modelle." },
+    { "name": "kosten-qualitaet", "source": "./mods/kosten-qualitaet", "description": "So günstig wie möglich, so teuer wie nötig; Prüfung durch ein starkes Modell." },
+    { "name": "github-minuten", "source": "./mods/github-minuten", "description": "Pushes und Merges bündeln, CI nur wenn nötig." },
+    { "name": "uebergabe-mod", "source": "./mods/uebergabe-mod", "description": "Erinnert ab drei geänderten Dateien an /uebergabe (arbeitsstand.md + Graph)." }
+  ]
+}
