@@ -1,6 +1,6 @@
 ---
 name: uebergabe
-description: Sitzungsende: arbeitsstand.md aktualisieren, Wissensgraph (graphify) nachziehen, offene Punkte festhalten. Trigger: /uebergabe, "Übergabe", "Sitzung abschließen".
+description: "Sitzungsende: arbeitsstand.md aktualisieren, Wissensgraph (graphify) nachziehen, offene Punkte festhalten. Trigger: /uebergabe, \"Übergabe\", \"Sitzung abschließen\"."
 ---
 
 # /uebergabe

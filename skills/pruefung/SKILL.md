@@ -1,6 +1,6 @@
 ---
 name: pruefung
-description: Voller Prüflauf vor Commit/PR: Lint, Typen, Tests, Build, Secrets-Scan, Review der Änderung. Trigger: /pruefung, "prüf das", "Prüflauf", "alles checken".
+description: "Voller Prüflauf vor Commit/PR: Lint, Typen, Tests, Build, Secrets-Scan, Review der Änderung. Trigger: /pruefung, \"prüf das\", \"Prüflauf\", \"alles checken\"."
 ---
 
 # /pruefung

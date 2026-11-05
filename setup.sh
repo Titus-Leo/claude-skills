@@ -20,7 +20,7 @@ for p in planung-teuer@titus-mods kosten-qualitaet@titus-mods github-minuten@tit
 done
 
 # Fremd-Skills in aktueller Upstream-Version
-add Leonxlnx/taste-skill
+add Leonxlnx/taste-skill --skill design-taste-frontend
 add vercel-labs/agent-skills --skill web-design-guidelines
 add microsoft/playwright-cli --skill playwright-cli
 add nextlevelbuilder/ui-ux-pro-max-skill --skill ui-ux-pro-max
