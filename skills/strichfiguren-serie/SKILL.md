@@ -56,8 +56,10 @@ Ziel: Der Nutzer sieht nur fertige, selbst abgenommene Folgen. Keine Schwächenl
 
 - **Länge**: über 60 s (TikTok-Auszahlung).
 - **Schnitt**: harte Schnitte auf Wortanfängen, keine Einstellung unter 30 Frames (1 s), keine kurzen Einschübe zwischen zwei Bildern desselben Ortes; Bewegung lieber per Kamerafahrt oder Punch-in. Bild nie vor der Stimme, Ton = Bild auf den Frame.
-- **Sprechen**: zügig, keine dramatischen Sprechpausen.
-- **Ton**: Effekte nie lauter als die Stimme; Geräuschteppiche bei etwa -30 LUFS unter der Sprache.
+- **Sprechen**: zügig, keine dramatischen Sprechpausen, aber mit echter Emotion (Angst, Schreien an Pointen, Weinen), nie gelassen vorgelesen. Kein Funk- oder Walkie-Talkie-Filter auf normalen Stimmen.
+- **Ton**: Effekte nie lauter als die Stimme; Geräuschteppiche bei etwa -30 LUFS unter der Sprache. Jedes Geräusch passt zu dem, was man in diesem Moment sieht.
+- **Musik**: Hintergrundmusik läuft unter der Folge, wird unter Sprache leiser und stoppt hart an Pointen (Stille als Effekt).
+- **Pointen-Sync**: Ein Pointen-Wort (Schrei, Name, Knall) bekommt eine eigene Zeile. Der Bild-Trigger wird gegen den Pegelsprung in der Tonspur geprüft, nicht nur gegen Whisper. Das Bild kommt nie vor der Stimme (früherer Fehler: Bild "FIRE" vor dem Ruf).
 - **Welt**: kleine Figuren in großer, detaillierter, echter Welt (1 m = 170 px, Erwachsener etwa 300 px), nie grauer Hintergrund, nichts schwebt, Proportionen stimmen. Feste, wiederverwendbare Schauplätze; Innenszenen im Gebäudeschnitt.
 - **Physik und Logik**:
   - Wasser kommt von unten, steht auf einem Stockwerk überall gleich hoch, steigt nur.
@@ -65,12 +67,28 @@ Ziel: Der Nutzer sieht nur fertige, selbst abgenommene Folgen. Keine Schwächenl
   - Jeder Ortswechsel ist im Bild nachvollziehbar (z. B. Tür sichtbar aufgehen und durchschwimmen lassen, nicht wegschneiden).
 - **Figuren**: Arme knicken natürlich (Unterarm nie gegen den Ellbogen); "You" trägt immer die bunte Propellermütze.
 - **Look-Fragen** (Accessoires, Farben, Stil): nie raten und komplett rendern, sondern 3-4 Varianten als Testbild (nah und Totale) zeigen und wählen lassen. Der Auftraggeber mag es verspielt und lustig, nicht "cool".
-- **Abstimmung ehrlich**: keine erfundenen Prozentzahlen; Zweige, die vor der Auszählung gebaut wurden, kennzeichnen.
+- **Abstimmung ehrlich und durchgehend**: Abgestimmt wird in jeder Folge, nie nur gelegentlich. Keine erfundenen Prozentzahlen; Zweige, die vor der Auszählung gebaut wurden, kennzeichnen.
+- **Nicht auf Vorrat produzieren**: Vorab nur den gemeinsamen Teil der nächsten Folge bauen, den Abzweig erst nach der Auszählung, außer der Auftraggeber zieht einen Zweig ausdrücklich vor.
 - **Inhalt**: keine sexuellen Darstellungen, keine fremden Meme-Figuren, kein Blut, Tod nur angedeutet, Kinder nie in gezeigter Lebensgefahr.
 - **Konsequenzen**: Jede Wahl und jeder Verlust kommt ins Register und zahlt sich 2-4 Folgen später aus.
 
+## Neue Serien, Formate, Storyrichtungen
+
+- Laufende Serienfolgen: direkt bauen und erst das Fertige zeigen.
+- Neue Serie, neues Format oder neue Storyrichtung:
+  1. Zuerst Thema oder Skript in Stichpunkten zur Freigabe zeigen ("go oder nicht").
+  2. Dann eine kurze Probe von 15-20 s bauen.
+  3. Erst danach die ganze Folge.
+- Die Welt so bauen, dass das Problem bleibt und mehrere Staffeln trägt (z. B. das Tal bleibt ein See).
+- Vorlieben für weitere Formate:
+  - Humor und echte Persönlichkeit.
+  - Historische Momente, in denen Figuren reden wie heute; absichtlich dumme Erklärvideos.
+  - 2D-Strichfiguren statt Fotorealismus, die Umgebung reich und gut sichtbar.
+- Tabu: keine Voyeur-Motive (z. B. Nachbar beim Duschen), keine Zombies mehr.
+
 ## Kosten und Git
 
+- Leitsatz: so wenig wie möglich, so viel wie nötig, damit die Qualität richtig gut wird.
 - Credits sparen: ein Take je Zeile, vorhandene Assets nie neu erzeugen.
 - Kleine Pakete, Agenten bekommen Dateiliste und Abnahmekriterien.
 - CI-Läufe bündeln; vor jedem Push sagen, der wievielte er ist.
