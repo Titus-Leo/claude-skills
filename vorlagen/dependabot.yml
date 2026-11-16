@@ -1,0 +1,21 @@
+# Nach .github/dependabot.yml kopieren; package-ecosystem je Projekt anpassen (npm, pip, docker, gradle, ...).
+# Monatlich und gebündelt: jede Dependabot-PR startet CI und kostet bei privaten Repos Actions-Minuten.
+# Sicherheitsupdates kommen davon unabhängig sofort (GitHub-Einstellung "Dependabot security updates").
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 1
+    groups:
+      alle:
+        patterns: ['*']
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    open-pull-requests-limit: 1
+    groups:
+      alle:
+        patterns: ['*']
