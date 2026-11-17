@@ -1,0 +1,20 @@
+# Sicherheitsupdates von Dependabot gehen von selbst rein (Leo, 17.11.2026). Hier gibt es keine Tests und nichts läuft live;
+# deshalb ohne Prüfung und auch bei Major-Sprüngen. Bricht dadurch ein Skill, den Merge-Commit zurücknehmen.
+name: Update-PRs zusammenführen
+
+on: pull_request
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  zusammenfuehren:
+    if: github.event.pull_request.user.login == 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: gh pr merge --squash "$PR_URL"
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
